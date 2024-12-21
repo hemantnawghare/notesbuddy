@@ -1,0 +1,86 @@
+/* Navbar styles */
+.navbar {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container {
+    padding-right: 5px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1c1c24;
+    height: 50px;
+    width: 550px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.search-container .input-container {
+    border: none;
+    background-color: transparent;
+    width: 540px;
+    height: 35px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.search-container .search {
+    background-color: rgb(214, 116, 5);
+    border-radius: 10px;
+    width: 50px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.navbar-right {
+    display: block;
+}
+
+.navbar-right .register {
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(214, 116, 5);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.navbar-right .login {
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #6b7280;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-right {
+        display: none;
+    }
+    .logo{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-right {
+        display: none;
+    }
+}
+
+.navbar-right button:hover {
+    transform: scale(1.1);
+}
