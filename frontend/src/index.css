@@ -1,28 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: outfit;
+  font-family: 'Outfit', sans-serif;
   scroll-behavior: smooth;
 }
-body{
+
+body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
-a{
+
+a {
   text-decoration: none;
   color: inherit;
 }
-.app{
-  width: 90%;
+
+.app {
+  width: 100%;
   margin: auto;
+  background-color: #f9f9f9;
 }
-/* @keyframes fadeIn {
-  0%{
-    opacity: 0;
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px); /* Full height minus navbar */
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 0 0 220px; /* Fixed width for the sidebar */
+  background-color: #c4c2c2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.content {
+  flex: 1; /* Remaining space for the content */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
   }
-  100%{
-    opacity: 1;
+
+  .sidebar {
+    width: 100%; /* Sidebar spans full width on smaller screens */
+    flex: 0 0 auto;
+    order: -1; /* Sidebar moves to the top */
   }
-} */
+
+  .content {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+  }
+
+  .content {
+    margin-top: 10px;
+  }
+}

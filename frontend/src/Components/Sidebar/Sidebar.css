@@ -1,94 +1,53 @@
-/* Sidebar container styles */
 .sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Space between items for better spacing */
+    justify-content: space-between;
     height: 100%;
-    max-height: 500px; /* Constrain the height */
-    width: 100px;
-    padding: 20px;
-    margin: 10px;
+    max-height: 100%;
     background-color: #c4c2c2;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow for a modern look */
     border: none;
-}
-
-/* Logo styles */
-.logo {
-    width: 40px; /* Adjust logo size for better visibility */
-}
-
-/* Sidebar options container */
-.sidebar-options {
+  }
+  
+  .sidebar-options {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Reduce gap for better spacing */
+    gap: 50px;
     width: 100%;
-    align-items: center;
-}
-
-/* Individual sidebar option */
-.sidebar-option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+  
+  .sidebar-option {
     text-align: center;
-    color: #000;
-    font-size: 18px;
-    text-decoration: none;
-    transition: all 0.3s ease; /* Smooth hover transition */
-}
+    font-size: 20px;
+    width: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .sidebar-option:hover {
+    transform: scale(1.1);
+    color: #007bff;
+  }
 
-/* Icon inside sidebar option */
-.sidebar-option svg {
-    font-size: 24px; /* Adjust icon size */
-    margin-bottom: 5px; /* Add spacing between icon and text */
-}
-
-/* Hover effect for sidebar option */
-.sidebar-option:hover {
-    color: #007bff; /* Highlight color */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-
-/* Active link styles */
-.sidebar-option.active {
-    color: #007bff; /* Highlight active link */
-    font-weight: bold; /* Emphasize the active link */
-}
-
-/* Media query for mobile view */
-@media (max-width: 768px) {
+  .sidebar-option.active {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
     .sidebar {
-        position: fixed; /* Fix the sidebar at the bottom of the screen */
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        max-height: 90px; /* Limit the height for mobile */
-        border-radius: 0;
-        box-shadow: none; /* Remove shadow for mobile */
-        padding: 10px 20px; /* Adjust padding for smaller screen */
-        background-color: #fff; /* Change background color for mobile */
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      height: 70px;
+      padding: 0;
     }
-
+  
     .sidebar-options {
-        flex-direction: row; /* Arrange items horizontally for mobile */
-        justify-content: space-around;
-        width: 100%; /* Ensure the options stretch across the sidebar */
+      flex-direction: row;
+      gap: 25px;
     }
-
-    .sidebar-option {
-        flex-direction: column; /* Arrange icon and text horizontally */
-        align-items: center;
-        font-size: 14px; /* Reduce font size for mobile */
-    }
-
-    .sidebar-option svg {
-        font-size: 18px; /* Adjust icon size for mobile */
-        margin-right: 5px; /* Space between icon and label */
-    }
-}
+  }
+  

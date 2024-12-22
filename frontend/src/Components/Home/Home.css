@@ -1,0 +1,8 @@
+.app{
+    width: 90%;
+    height: calc(100% - 70px);
+}
+.heading{
+    margin: 10px 30px;
+    font-size: 30px;
+}

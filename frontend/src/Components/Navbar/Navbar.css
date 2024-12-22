@@ -1,86 +1,69 @@
-/* Navbar styles */
 .navbar {
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.search-container {
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container {
     display: flex;
+    width: 700px;
     align-items: center;
-    justify-content: space-around;
-    background-color: #1c1c24;
-    height: 50px;
-    width: 550px;
-    border-radius: 10px;
     gap: 10px;
-}
-
-.search-container .input-container {
-    border: none;
-    background-color: transparent;
-    width: 540px;
-    height: 35px;
-    outline: none;
-    color: white;
-    font-size: 20px;
-}
-
-.search-container .search {
-    background-color: rgb(214, 116, 5);
+    background-color: #1c1c24;
+    padding: 5px 10px;
     border-radius: 10px;
-    width: 50px;
+  }
+  
+  .search-container input {
+    border: none;
     outline: none;
+    background: transparent;
+    color: white;
+    flex: 1;
+  }
+  
+  .search-container .search {
+    background-color: #d67405;
+    padding: 5px 10px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-}
-
-.navbar-right {
-    display: block;
-}
-
-.navbar-right .register {
-    height: 40px;
-    padding: 10px;
-    margin: 5px;
-    color: white;
-    background-color: rgb(214, 116, 5);
-    border: none;
-    border-radius: 20px;
-    font-size: 15px;
-}
-
-.navbar-right .login {
-    height: 40px;
-    padding: 10px;
-    margin: 5px;
-    background-color: #6b7280;
-    border: none;
-    border-radius: 20px;
-    font-size: 15px;
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .navbar-right {
-        display: none;
-    }
-    .logo{
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 900px) {
-    .navbar-right {
-        display: none;
-    }
-}
-
-.navbar-right button:hover {
+  }
+  
+  .navbar-right button:hover{
+    gap: 20px;
     transform: scale(1.1);
-}
+  }
+  .navbar-right button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    gap: 20px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-right .register {
+    background-color: #d67405;
+    margin: 20px;
+  }
+  
+  .navbar-right .login {
+    background-color: #6b7280;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-right {
+      display: none;
+    }
+  
+    .search-container {
+      width: 100%;
+    }
+  }
+  

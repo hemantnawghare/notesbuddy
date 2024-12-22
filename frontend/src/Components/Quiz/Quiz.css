@@ -1,0 +1,31 @@
+.quiz-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  
+  .construction-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .under-construction-text {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .construction-icon {
+    font-size: 50px;
+    color: #e67e22;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,33 @@
+/* Carousel container alongside the sidebar */
+.carousel-container {
+    flex: 1; /* Take remaining space next to sidebar */
+    margin: 0px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Swiper custom styles */
+.swiper-custom {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background-image: url("https://thumbs.dreamstime.com/b/important-announcement-news-label-megaphone-vector-illustration-important-announcement-news-label-megaphone-334602537.jpg");
+    height: 300px;
+}
+
+.slide-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    font-size: 16px;
+    color: #555;
+}

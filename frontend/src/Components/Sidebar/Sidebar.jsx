@@ -10,12 +10,11 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
   // Sidebar options array for dynamic rendering
   const sidebarOptions = [
-    { path: '/home', icon: <FaHome />, label: 'Home' },
+    { path: '/', icon: <FaHome />, label: 'Home' },
     { path: '/upload', icon: <FaUpload />, label: 'Upload' },
     { path: '/about', icon: <FcAbout />, label: 'About' },
     { path: '/chat', icon: <CiChat1 />, label: 'Chat' },
-    { path: '/brain', icon: <LuBrain />, label: 'Brain' },
-    { path: '/toggle', icon: <IoSunny />, label: 'theme' }
+    { path: '/quiz', icon: <LuBrain />, label: 'Quiz' }
   ];
 
   return (
