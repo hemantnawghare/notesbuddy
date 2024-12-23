@@ -9,6 +9,8 @@ import Contactus from './Components/Contactus/Contactus';
 import Upload from './Components/Upload/Upload';
 import Chat from './Components/Chat/Chat';
 import Quiz from './Components/Quiz/Quiz';
+import Semisters from './Components/Semisters/Semisters';
+import SemesterDetails from './Components/SemesterDetails/SemesterDetails';
 
 const App = () => {
   return (
@@ -26,6 +28,7 @@ const App = () => {
             <Route path="/upload" element={<Upload />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/:courseName" element={<Semisters />} />
           </Routes>
         </div>
       </div>

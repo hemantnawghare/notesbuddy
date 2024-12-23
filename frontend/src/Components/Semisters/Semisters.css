@@ -1,0 +1,31 @@
+.semesters-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.semesters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.semester-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px lightblue;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.semester-card:hover {
+    transform: scale(1.05);
+    background-color: #eef;
+}
